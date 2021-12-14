@@ -2,20 +2,35 @@ package model;
 
 public class Model {
 
-    private MessageForum messageForum;
-    private Order order;
-    private Product product;
-    private Review review;
-    private UserAccount userAccount;
-    private UserRole userRole;
+    private Admin Admin;
+    private Buyer Buyer;
+    private Cart Cart;
+    private Favourites Favourites;
+    private Kura Kura;
+    private Model Model;
+    private Order Order;
+    private Product Product;
+    private ProductList ProductList;
+    private ProductList2 productList2;
 
-    public void createMessageForum() { messageForum = new MessageForum();}
+    public void createAdmin() { Admin = new Admin();}
 
-    public void createOrder() { order = new Order(); }
+    public void createBuyer() { Buyer = new Buyer(); }
 
-    public void createProduct() { product = new Product(); }
+    public void createCart() { Cart = new Cart(); }
 
-    public void createReview() { review = new Review(); }
+    public void createFavourites() { Favourites = new Favourites();}
+    
+    public void createKura() { Kura = new Kura();}
+    
+    public void createModel() { Model = new Model();}
 
-    public void createUserAccount() { userAccount = new UserAccount(); }
+    public void createOrder() { Order = new Order();}
+
+    public void createProduct() { Product = new Product();}
+
+    public void createProductList() { ProductList = new ProductList();}
+
+    public void createproductList2() { productList2 = new ProductList2();}
+
 }

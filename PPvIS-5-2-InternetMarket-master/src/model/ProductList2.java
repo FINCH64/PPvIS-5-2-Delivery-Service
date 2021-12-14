@@ -2,20 +2,20 @@ package model;
 
 import java.util.List;
 
-public class Order {
-    public Order (){
+public class ProductList2 {
+    public ProductList2 (){
     
     }
 
-    public int id;
+    public String name;
     public List<Product> productList;
 
-    public int getId() {
-        return this.id;
+    public String getName() {
+        return this.name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Product> getProductList() {
@@ -25,5 +25,5 @@ public class Order {
     public void setProductList(List<Product> productList) {
         this.productList = productList;
     }
-
+    
 }

@@ -8,7 +8,7 @@ import java.awt.*;
 public class MainWindow extends JFrame {
     MainWindowController mainWindowController;
 
-    public MainWindow(MainWindowController mainWindowController) {
+    public MainWindow(MainWindowController mainWindowController2) {
 
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -69,7 +69,7 @@ public class MainWindow extends JFrame {
         btnSeller.setAlignmentX(Component.CENTER_ALIGNMENT);
         btnBuyer.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        this.mainWindowController = mainWindowController;
+        this.mainWindowController = mainWindowController2;
         this.add(btnRegistration);
         this.add(btnAuthorization);
         this.add(btnForum);

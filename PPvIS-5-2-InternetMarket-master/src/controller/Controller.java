@@ -5,59 +5,76 @@ import model.Model;
 public class Controller {
     public Controller(Model model) {}
 
-    private AccountController accountController;
-    private BuyerController buyerController;
-    private CatalogController catalogController;
-    private DatabaseManagerController databaseManagerController;
-    private ForumController forumController;
-    private ProductController productController;
-    private RegistrationController registrationController;
-    private SellerController sellerController;
-    private MainWindowController mainWindowController;
+    private AuthorisationController AuthorisationController;
+    private AuthorisationCreation AuthorisationCreation;
+    private DataController DataController;
+    private KuraActionsController KuraActionsController;
+    private KuraController KuraController;
+    private ProductController ProductController;
+    private ProductList ProductList;
+    private RegistrationController RegistrationController;
+    private RegistrationCreation RegistrationCreation;
+    private SearchController SearchController;
+    private UserActionController UserActionController;
+    private MainWindowController MainWindowController;
 
-    public void createAccountController() {}
-    public void createBuyerController() {}
-    public void createCatalogController() {}
-    public void createDatabaseManagerController() {}
-    public void createForumController() {}
-    public void createProductController() {}
-    public void createRegistrationController() {}
-    public void createSellerController() {}
     public void createMainWindowController() {}
+    public void createAuthorisationController() {}
+    public void createAuthorisationCreation() {}
+    public void createDataController() {}
+    public void createKuraActionsController() {}
+    public void createKuraController() {}
+    public void createProductController() {}
+    public void createProductList() {}
+    public void createRegistrationController() {}
+    public void createRegistrationCreation() {}
+    public void createSearchController() {}
+    public void createUserActionController() {}
 
-    public AccountController getAccountController() {
-        return accountController;
+    public MainWindowController getMainWindowController() {
+        return MainWindowController;
+    }
+   
+    public RegistrationCreation getRegistrationCreation() {
+        return RegistrationCreation;
     }
 
-    public BuyerController getBuyerController() {
-        return buyerController;
+    public AuthorisationController getAuthorisationController() {
+        return AuthorisationController;
     }
 
-    public CatalogController getCatalogController() {
-        return catalogController;
+    public AuthorisationCreation getAuthorisationCreation() {
+        return AuthorisationCreation;
     }
 
-    public DatabaseManagerController getDatabaseManagerController() {
-        return databaseManagerController;
-    }
-
-    public ForumController getForumController() {
-        return forumController;
+    public DataController getDataController() {
+        return DataController;
     }
 
     public ProductController getProductController() {
-        return productController;
+        return ProductController;
+    }
+
+    public ProductList getProductList() {
+        return ProductList;
     }
 
     public RegistrationController getRegistrationController() {
-        return registrationController;
+        return RegistrationController;
     }
 
-    public SellerController getSellerController() {
-        return sellerController;
+    public SearchController getSearchController() {
+        return SearchController;
     }
 
-    public MainWindowController getMainWindowController() {
-        return mainWindowController;
+    public KuraActionsController getKuraActionsController() {
+        return KuraActionsController;
+    }
+    public KuraController getKuraController() {
+        return KuraController;
+    }
+
+    public UserActionController getUserActionController() {
+        return UserActionController;
     }
 }

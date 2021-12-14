@@ -1,8 +1,11 @@
 package controller;
 
-import model.User;
+import model.Product;
 
-public class RegistrationController {
+import java.util.List;
+
+public class RegistrationCreation implements DataController{
+
     public void authorisation(String login,String password) {
         this.askLogin(login);
         this.askPassword(password);

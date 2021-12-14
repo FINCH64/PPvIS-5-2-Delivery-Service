@@ -1,16 +1,14 @@
 package view;
 
-import controller.AccountController;
-import controller.RegistrationController;
-
+import controller.UserActionController;
 import javax.swing.*;
 
 public class AuthorizationWindow extends JFrame {
 
 
-    AccountController accountController;
+    UserActionController userActionController;
 
-    public AuthorizationWindow(AccountController accountController){
+    public AuthorizationWindow(UserActionController userActionController){
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 300, 300);
@@ -19,12 +17,12 @@ public class AuthorizationWindow extends JFrame {
 
         btnEnter.addActionListener(e ->{});
 
-        JTextField txtName = new JFormattedTextField("Имя");
+        JTextField txtName = new JFormattedTextField("Логин");
         JTextField txtPass = new JFormattedTextField("Пароль");
 
 
 
-        this.accountController = accountController;
+        this.userActionController = userActionController;
         this.add(btnEnter);
         this.add(txtName);
         this.add(txtPass);

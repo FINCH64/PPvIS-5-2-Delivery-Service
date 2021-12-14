@@ -3,10 +3,10 @@ package view;
 import controller.UserActionController;
 import javax.swing.*;
 
-public class BuyerWindow extends JFrame {
+public class AdminWindow extends JFrame {
 
     UserActionController buyerController;
-    public BuyerWindow(UserActionController buyerController){
+    public AdminWindow(UserActionController buyerController){
 
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
